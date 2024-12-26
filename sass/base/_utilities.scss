@@ -1,0 +1,102 @@
+// .u-center-text{text-align:center  !important; } 
+// // .u-margin-medium{margin-bottom: -3rem !important; padding-top: 2rem !important;}
+// // // .u-margin-top-huge {margin-top :10rem !important; }
+// // .u-margin-bottom-small{margin-bottom:1.5rem !important ; }  
+// .u-margin-bottom-big{margin-bottom :8rem !important; } 
+// // .u-margin-top-big{margin-top :8rem !important; } 
+
+
+// .u-center-text { text-align:center; }
+
+// .u-margin-bottom-big { margin-bottom :8rem; }
+
+// .u-margin-top-huge {margin-top :10rem; } 
+
+.u-margin-medium{padding-left: 4rem; padding-top:4rem; padding-bottom: 10rem;
+    @include respond(phone){ 
+        margin-top:3rem !important; 
+    }
+
+}
+
+
+.u-center-text{text-align:center  !important; } 
+.u-margin-bottom-small{margin-bottom:1.5rem !important ; } 
+.u-margin-bottom-small-2{font-size: 3rem !important ; margin-bottom: 2rem !important;} 
+.u-margin-bottom-meduim{ margin-bottom: 4rem !important ; 
+    @include respond(tab-port){ 
+        margin-bottom:3rem !important; 
+    }
+} 
+.u-margin-bottom-big{margin-bottom :22rem !important; 
+    @include respond(phone){ 
+        margin-bottom:5rem !important; 
+        margin-top:30rem !important;
+    }
+    @include respond(tab-port){ 
+        margin-bottom:5rem !important; 
+        margin-top: 40rem !important;
+    }
+    @include respond(tab-land){ 
+        margin-bottom:15rem !important; 
+        margin-top: 10rem !important;
+    } 
+    @include respond(big-desktop){ 
+        margin-bottom:10rem !important; 
+        margin-top: 10rem !important;
+        
+    } 
+} 
+.u-margin-bottom-big-2{margin-bottom :28rem !important; 
+    @include respond(phone){ 
+        margin-bottom:5rem !important; 
+        margin-top:30rem !important;
+    }
+    @include respond(tab-port){ 
+        margin-bottom:5rem !important; 
+        margin-top: 40rem !important;
+    }
+    @include respond(tab-land){ 
+        margin-bottom:10rem !important; 
+        margin-top: 5rem !important;
+    } 
+} 
+
+.u-margin-bottom-big-3{
+    margin-bottom :16rem !important; 
+    @include respond(phone){ 
+        margin-bottom:5rem !important; 
+        margin-top:30rem !important;
+    }
+    @include respond(tab-port){ 
+        margin-bottom:5rem !important; 
+        margin-top: 40rem !important;
+    }
+    @include respond(tab-land){ 
+        margin-bottom:15rem !important; 
+        margin-top: 10rem !important;
+    } 
+} 
+
+
+.u-margin-bottom-big-4{
+    margin-top: 16rem !important;
+    margin-bottom :16rem !important; 
+    @include respond(phone){ 
+        margin-bottom:5rem !important; 
+        margin-top:30rem !important;
+    }
+    @include respond(tab-port){ 
+        margin-bottom:5rem !important; 
+        margin-top: 40rem !important;
+    }
+    @include respond(tab-land){ 
+        margin-bottom:15rem !important; 
+        margin-top: 10rem !important;
+    } 
+} 
+
+.u-margin-top-big{margin-top :8rem !important; } 
+.u-margin-top-huge{margin-top :10rem !important; }
+
+

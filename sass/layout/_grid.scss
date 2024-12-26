@@ -1,0 +1,105 @@
+.column-1-of-3{
+    display: grid;
+    column-gap: $column_gap;
+    grid-template-columns: repeat(3, 1fr) ;
+    margin: $column_margin;
+    @include respond(phone){ 
+       column-gap: 0.5rem;
+      }
+    @include respond(tab-port) { 
+        grid-template-columns: repeat(1, 1fr);
+    }
+    @include respond(tab-land) { 
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include respond(big-desktop){ 
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+  
+}
+
+
+.column-4-of-4{
+    display: grid;
+    column-gap: $column_gap;
+    grid-template-columns: repeat(4, 1fr);
+    margin: $column_margin;
+
+    @include respond(phone){ 
+        grid-template-columns: repeat(1, 1fr);
+    
+    }
+    
+    @include respond(tab-port) { 
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include respond(tab-land) { 
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+
+}
+
+
+.column-1-of-1{
+    display: grid;
+    column-gap: $column_gap;
+    grid-template-columns: repeat(1, 1fr);
+    margin: $column_margin;
+    height: auto;
+   
+}
+
+.column-1-of-2{
+    display: grid;
+    column-gap: $column_gap;
+    grid-template-columns: repeat(2, 2fr);
+    margin: $column_margin;
+    height: auto;
+    @include respond(tab-port) { 
+        grid-template-columns: repeat(1, 2fr);
+    }
+    @include respond(tab-land) { 
+        grid-template-columns: repeat(1, 2fr);
+    }
+    
+}
+
+.grid_items{  
+    height:auto;
+    width: auto;
+    &:not(:last-child) { 
+        margin-bottom: $gutter-vertical; 
+ 
+        @include respond(tab-port) { 
+            margin-bottom: $gutter-vertical-small; 
+        }
+    }
+
+        
+    @include respond(tab-port) { 
+        max-width: 50rem; 
+        padding: 0 3rem; 
+    } 
+ 
+    // @include clearfix; 
+ 
+    [class^="col-"] { 
+        float: left; 
+ 
+        &:not(:last-child) { 
+            margin-right: $gutter-horizontal; 
+ 
+            @include respond(tab-port) { 
+                margin-right: 0; 
+                margin-bottom: $gutter-vertical-small; 
+            }
+        }
+    }
+
+    @include respond(tab-port) { 
+        width: 100% !important; 
+    } 
+}
+

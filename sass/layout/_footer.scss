@@ -1,0 +1,91 @@
+.footer { 
+    background-color: $color-primary-dark; 
+    padding:10rem 0; 
+    font-size:1.4rem; 
+    @include respond(tab-port){ 
+        padding:8rem 0; 
+      } 
+    &__icon-box{ 
+      text-align:center; 
+      color: $color-white;
+     font-size: 6rem;
+      margin-bottom:8rem; 
+      
+      @include respond(tab-port){ 
+        margin-bottom:6rem; 
+     }
+    } 
+
+    .fa-icon:hover{
+            transition: all .1s .1s; 
+            transform:scale(1.1); 
+            cursor: pointer;
+  
+    }
+
+    &__navigation{ 
+        border-top: 1px solid $color-white; 
+        padding-top: 2rem; 
+        display: inline-block; 
+        @include respond(tab-port){ 
+            width:100%; 
+            text-align:center; 
+          }
+    } 
+    &__list{ 
+        list-style:none; 
+       
+    } 
+    &__item{ 
+       display: inline-block; 
+       &:not(:last-child){ 
+           margin-right: 1.5rem; 
+       } 
+    } 
+   &__link{ 
+        &:link, 
+        &:visited { 
+            color: $color-grey-light-1; 
+            // background-color: $color-grey-dark-3;//new variable #333 
+            text-decoration:none; 
+            text-transform:uppercase; 
+            display:inline-block; 
+            transition: all .2s; 
+        } 
+        &:hover, 
+        &:active { 
+            border: 0.3rem;
+            border-style: solid;
+            border-radius: 0.4rem;
+            padding: 0.3rem;
+
+            color: $color-white; 
+            box-shadow: 0 1rem 2rem rgba($color-black,.4); 
+            transition: all .1s .1s; 
+            transform:scale(1.1); 
+        } 
+    } 
+    &__subscribe { 
+        width: 30rem;
+        // padding-top: 1rem; 
+        margin-top: -3rem; 
+        float:right;
+        // background-color:blueviolet;
+        
+        @include respond(tab-port){ 
+            width:100%; 
+            float:none; 
+            margin-top: 4rem;
+         }
+
+    } 
+
+    &__copyrights{
+        width: 100%;
+        margin-top: 10rem;
+        margin-bottom: -6rem;
+        // background-color: blueviolet;
+        color: $color-white;
+        text-align: center;
+     }    
+}

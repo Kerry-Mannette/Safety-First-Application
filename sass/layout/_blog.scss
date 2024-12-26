@@ -1,0 +1,32 @@
+
+  .section-blog{
+    // background-color: blue;
+    padding: 15rem;
+  }
+  
+  
+  /* Add a card effect for articles */  
+  .article{
+    font-size: 1.5rem;
+    //  background-color: blueviolet;
+    &__image{
+      width: 60rem;
+      height: 40rem;
+      padding: 2rem 0rem 2rem 0rem;
+    }
+   
+  }
+
+  .color-dark{
+    color: $color-grey-dark;
+  }
+
+
+  
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }  
