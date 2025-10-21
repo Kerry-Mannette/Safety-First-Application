@@ -6,7 +6,8 @@ To launch the application run index.html in the root directory.
 
 This application was developed using HTML, CSS, SASS, and JavaScript.
 
-<img width="1755" height="8091" alt="image" src="https://github.com/user-attachments/assets/538cd136-64a0-43a9-8fbd-500da5e64620" />
+![Screenshot_25-12-2024_233253_127 0 0 1](https://github.com/user-attachments/assets/4f1c943f-640e-4bd9-a4bc-0cd9e3d3d968)
+
 
 
 
